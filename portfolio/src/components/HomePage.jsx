@@ -19,6 +19,27 @@ const HomePage = () => {
         }
     }, [isActive])
 
+    useEffect(() => {
+        var section = document.querySelectorAll('section')
+        var navLinks = document.querySelectorAll('.right-navi ul li a')
+
+       window.onscroll = () => {
+        section.forEach(sec => {
+            var top = window.scrollY;
+            var offset = sec.offsetTop;
+            var height = sec.offsetHeight
+            var id = sec.getAttribute('id')
+        })
+
+        if(top >= offset && top < offset + height){
+            navLinks.forEach(links => {
+                links.classList.remove('active');
+                document.querySelector('.right-navi ul li a[href*= ' +id+ ']').classList.add('active')
+            })
+        }
+       }
+    })
+
     const handleToggle = () => {
         setIsActive(prevState => !prevState);
     };
@@ -28,14 +49,14 @@ const HomePage = () => {
 
             <div className='navbar'>
                 <div className="left-navi">
-                    <h1>PORTFOLIO.</h1>
+                    <h1><a href='#home'>PORTFOLIO.</a></h1>
                 </div>
                 <div className='burger'>
-                    <button onClick={handleToggle} className='open'><i class="fa-solid fa-bars fa-xl"></i></button>
+                    <button onClick={handleToggle} ><i class="fa-solid fa-bars fa-xl"></i></button>
                 </div>
                 <div className='right-navi'>
                     <ul>
-                        <li><a href="#home" class='active'>HOME</a></li>
+                        <li><a href="#Home" class='active'>HOME</a></li>
                         <li><a href="#about">ABOUT</a></li>
                         <li><a href="#skills">SKILLS</a></li>
                         <li><a href="#project">PROJECTS</a></li>
@@ -45,7 +66,7 @@ const HomePage = () => {
                 </div>
             </div>
 
-            <div id='Home'>
+            <section id='home'>
                 <div className='inner-home'>
                     <div className='inner-home1'>
                         <h2 className='h2'>Hello, It's Me</h2>
@@ -65,8 +86,11 @@ const HomePage = () => {
                         <img src='https://www.creative-tim.com/blog/content/images/size/w960/2022/01/which-development-job-is-right-for-you.jpg' alt='Loading...' />
                     </div>
                 </div>
+            </section>
 
-            </div>
+            <section id='about'>
+                <h1 className='about-h1'>ABOUT ME</h1>
+            </section>
 
         </div>
     )
