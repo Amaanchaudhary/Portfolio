@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -15,7 +15,7 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.navbar{
+.navbar {
     width: 100%;
     height: 70px;
     background-color: black;
@@ -26,16 +26,20 @@
     position: sticky;
     top: 0;
 }
-.left-navi > h1{
+
+.left-navi>h1 {
     font-size: 24px;
 }
-.burger{
+
+.burger {
     display: none;
 }
-.right-navi ul{
+
+.right-navi ul {
     display: flex;
 }
-.right-navi ul li a{
+
+.right-navi ul li a {
     display: block;
     font-size: 18px;
     padding: 5px 15px;
@@ -44,19 +48,20 @@
     margin: 10 5px;
     /* border: 1px solid blue; */
 }
-.right-navi ul li a:hover ,
+
+.right-navi ul li a:hover,
 .right-navi ul li a.active {
     color: black;
     background-color: white;
 }
 
 
-#home{
-    height: 87vh;
-    /* margin-top: 70px; */
+#home {
+    height: 100vh;
     /* border: 1px solid blue; */
 }
-.inner-home{
+
+.inner-home {
     /* border: 1px solid white; */
     height: 100%;
     display: flex;
@@ -65,151 +70,837 @@
     width: 80%;
     margin: auto;
 }
-.inner-home1{
-    max-width: 60%; 
+
+.inner-home1 {
+    max-width: 60%;
     text-align: left;
     /* border: 2px solid white; */
-} 
-.h2{
+}
+
+.h2 {
     font-size: 44px;
     margin: 0%;
 }
-.h1{
+
+.h1 {
     font-size: 55px;
     letter-spacing: 1px;
-    margin-bottom: 5px;    
+    margin-bottom: 5px;
     line-height: 40px;
     font-weight: 700;
 }
-.h3{
+
+.h3 {
     font-size: 40px;
 }
-.p{
+
+.p {
     font-size: 25px;
     letter-spacing: -1px;
     margin-top: 20px;
 }
-.Home-button{
+
+.Home-button {
     display: flex;
 }
-.Home-button > button{
+
+.Home-button>button {
     margin: 10px 10px 10px 0px;
     border: 1px solid blue;
     padding: 10px 20px;
     border-radius: 25px;
     font-size: 24px;
 }
-.Home-button > button:hover{
+
+.Home-button>button:hover {
     background-color: aliceblue;
     color: black;
 }
 
 .inner-home2 {
-    height : 58%;
-    width : 30%;
+    height: 58%;
+    width: 30%;
     /* border: 2px solid white; */
+    border-radius: 50%;
+    box-shadow: 10px 10px 30px 0px ghostwhite;
 }
-.inner-home2 img{
+
+.inner-home2 img {
     border-radius: 50%;
     height: 100%;
     width: 100%;
 }
 
-#about{
-    height: 87vh;
+#about {
+    height: 100vh;
+    border: 0.1px solid rgb(1, 1, 52);
     width: 100%;
-    border: 1px solid white;
-    margin-top: 70px;
+    /* border: 3px solid white; */
+    /* margin-top: 70px; */
     text-align: center;
 }
-.about-h1{
- 
+
+.inner-about {
+    /* border: 1px solid white; */
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
 }
+
+.inner-about1 {
+    height: 55%;
+    width: 28%;
+    border: 1px solid white;
+    border-radius: 50%;
+    box-shadow: 10px 10px 30px 00px ghostwhite;
+}
+
+.inner-about1>img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.about-h1 {
+    font-size: 50px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    line-height: 40px;
+    font-weight: 700;
+    text-decoration-line: underline;
+}
+
+.about-h3 {
+    font-size: 37px;
+}
+
+.about-p {
+    font-size: 22px;
+    letter-spacing: 0px;
+    margin-top: 10px;
+}
+
+.inner-about2 {
+    max-width: 60%;
+    text-align: left;
+    /* border: 1px solid white; */
+}
+
+#skills {
+    height: 100vh;
+    width: 100%;
+    /* border: 4px solid white; */
+    border: 0.1px solid rgb(1, 1, 52);
+    /* margin-top: 70px; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.skills-h1 {
+    font-size: 40px;
+    margin-top: 70px;
+    letter-spacing: 1px;
+    line-height: 40px;
+    /* margin-bottom: 30px;  */
+    font-weight: 700;
+    text-decoration-line: underline;
+    /* border: 1px solid white; */
+}
+
+.inner-skills {
+    /* border: 2px solid red; */
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+.skills-h2 {
+    font-size: 37px;
+}
+
+.skills-main {
+    height: 34%;
+    width: 15%;
+    /* border: 1px solid white; */
+    margin: 1% 5.1%;
+}
+
+.skill-images {
+    /* border: 2px solid red; */
+    height: 80%;
+    width: 100%;
+}
+
+.skill-images>img {
+    width: 100%;
+    height: 100%;
+}
+
+.skill-images>h6 {
+    font-size: 27px;
+    font-weight: 600;
+}
+
+#project {
+    height: 100vh;
+    width: 100%;
+    /* border: 4px solid white; */
+    /* margin-top: 70px; */
+    text-align: center;
+    border: 0.1px solid rgb(1, 1, 52);
+    /* display: flex;
+    justify-content: space-around; */
+}
+
+#services {
+    height: 100vh;
+    width: 100%;
+    /* border: 4px solid white; */
+    border: 0.1px solid rgb(1, 1, 52);
+    /* margin-top: 70px; */
+    text-align: center;
+    /* display: flex;
+    justify-content: space-around; */
+}
+
+.project-h1 {
+    font-size: 40px;
+    margin-top: 70px;
+    letter-spacing: 1px;
+    line-height: 40px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-decoration-line: underline;
+    /* border: 1px solid white; */
+}
+
+.inner-project {
+    /* border: 2px solid red; */
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+.project-main {
+    width: 30%;
+    height: 50%;
+    border: 3px solid blue;
+    box-shadow: 1px -1px 10px 0px royalblue;
+    border-radius: 10px;
+}
+
+.project-main>img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+#contact {
+    height: 100vh;
+    width: 100%;
+    /* border: 4px solid white; */
+    border: 0.1px solid rgb(1, 1, 52);
+    /* margin-top: 70px; */
+    text-align: center;
+    /* display: flex;
+    justify-content: space-around; */
+}
+
+.inner-contact {
+    /* border: 1px solid white; */
+    height: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+}
+
+.contact1 {
+    /* border: 1px solid white; */
+    width: 40%;
+    /* height: 400px; */
+    text-align: left;
+}
+
+.contact1-h4 {
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.contact-p {
+    font-size: 18px;
+    margin: 10px 0px;
+    letter-spacing: 1px;
+}
+
+.contact-p2 {
+    font-size: 18px;
+    margin: 10px 0px;
+    letter-spacing: 0px;
+}
+
+.imp-text {
+    color: rgb(4, 220, 249)
+}
+
+.phone-no {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.email {
+    font-size: 18px;
+    line-height: 28px;
+    /* margin-bottom: -10px; */
+    /* border: 1px solid white;   */
+}
+
+.address {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.contact2 {
+    /* border: 1px solid white; */
+    width: 45%;
+    /* height: 400px; */
+    text-align: left;
+    color: black;
+}
+
+.name {
+    width: 100%;
+    height: 45px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.email-input {
+    width: 100%;
+    height: 45px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    
+}
+
+.subject {
+    width: 100%;
+    height: 85px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.message {
+    width: 100%;
+    height: 130px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    font-size: 25px;
+}
+
+.submit {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    /* border: 1px solid red; */
+    background-color: red;
+    color: black;
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
 @media screen and (max-width : 1750px) {
-    .h2{
+    .h2 {
         font-size: 30px;
         margin: 0%;
     }
-    .h1{
+
+    .h1 {
         font-size: 38px;
         letter-spacing: 1px;
-        margin-bottom: 5px;    
+        margin-bottom: 5px;
         line-height: 35px;
         font-weight: 700;
     }
-    .h3{
+
+    .h3 {
         font-size: 25px;
         text-decoration-line: underline;
     }
-    .p{
+
+    .p {
         font-size: 20px;
         letter-spacing: -1px;
         margin-top: 10px;
     }
-    .Home-button{
+
+    .Home-button {
         display: flex;
     }
-    .Home-button > button{
+
+    .Home-button>button {
         margin: 10px 10px 10px 0px;
         /* border: 1px solid blue; */
         padding: 5px 10px;
         border-radius: 25px;
         font-size: 18px;
     }
+
     .inner-home2 {
-        height : 330px;
-        width : 330px;
+        height: 330px;
+        width: 330px;
         /* border: 2px solid white; */
     }
-}   
 
-
-@media only screen and (max-width : 1320px){
-    .navbar{
-        padding: 0 50px;
-    }
-    .h2{
-        font-size: 27px;
-        margin: 0%;
-    }
-    .h1{
+    .about-h1 {
         font-size: 35px;
         letter-spacing: 1px;
-        margin-bottom: 5px;    
-        line-height: 33px;
+        margin-bottom: 5px;
+        line-height: 35px;
         font-weight: 700;
     }
-    .h3{
+
+    .about-h3 {
         font-size: 22px;
-        text-decoration-line: underline;
     }
-    .p{
+
+    .about-p {
         font-size: 18px;
         letter-spacing: -1px;
         margin-top: 10px;
     }
-    .Home-button{
+
+    .inner-about1 {
+        height: 330px;
+        width: 330px;
+        /* border: 2px solid white; */
+    }
+
+    .skills-h1 {
+        font-size: 35px;
+    }
+
+    /* .skills-main{
+        height: 220px;
+        width : 180px;
+        border: 1px solid white;
+        margin: 10px 5%;
+    } */
+    .skill-images>h6 {
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    #project {
+        height: 100vh;
+        width: 100%;
+        /* border: 4px solid white; */
+        /* margin-top: 70px; */
+        text-align: center;
+        /* display: flex;
+        justify-content: space-around; */
+    }
+
+    #services {
+        height: 100vh;
+        width: 100%;
+        /* border: 4px solid white; */
+        /* margin-top: 70px; */
+        text-align: center;
+        /* display: flex;
+        justify-content: space-around; */
+    }
+
+    .project-h1 {
+        font-size: 37px;
+        margin-top: 70px;
+        letter-spacing: 1px;
+        line-height: 40px;
+        margin-bottom: 30px;
+        font-weight: 700;
+        text-decoration-line: underline;
+        /* border: 1px solid white; */
+    }
+
+    .inner-project {
+        /* border: 2px solid red; */
+        height: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        width: 92%;
+        margin: auto;
+    }
+
+    .project-main {
+        width: 29%;
+        height: 50%;
+        border-radius: 10px;
+    }
+    .inner-contact {
+        /* border: 1px solid white; */
+        height: 75%;
+        width: 90%;
+    }
+    .contact1 {
+        /* border: 1px solid white; */
+        width: 44%;
+        /* height: 400px; */
+        text-align: left;
+    }
+    
+    .contact1-h4 {
+        font-size: 23px;
+        font-weight: 600;
+    }
+    
+    .contact-p {
+        font-size:16px;
+        margin: 10px 0px;
+        letter-spacing: 1px;
+    }
+    
+    .contact-p2 {
+        font-size: 15px;
+        margin: 10px 0px;
+        letter-spacing: 0px;
+    }
+    
+    .imp-text {
+        color: rgb(4, 220, 249)
+    }
+    
+    .phone-no {
+        font-size: 15px;
+        line-height: 28px;
+    }
+    
+    .email {
+        font-size: 15px;
+        line-height: 28px;
+        /* margin-bottom: -15px; */
+        /* border: 1px solid white;   */
+    }
+    
+    .address {
+        font-size: 15px;
+        line-height: 28px;
+        
+    }
+    
+    .contact2 {
+        /* border: 1px solid white; */
+        width: 40%;
+        /* height: 400px; */
+        text-align: left;
+        color: black;
+    }
+    
+    .name {
+        width: 100%;
+        height: 35px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        font-size: 18px;
+    }
+    
+    .email-input {
+        width: 100%;
+        height: 35px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        font-size: 18px;
+    }
+    
+    .subject {
+        width: 100%;
+        height: 75px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        font-size: 20px;
+    }
+    
+    .message {
+        width: 100%;
+        height: 110px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        font-size: 25px;
+    }
+    
+    .submit {
+        width: 100%;
+        height: 37px;
+        border-radius: 10px;
+        margin-bottom: 5px;
+        font-size: 25px;
+        font-weight: 600;
+    }
+    
+}
+
+
+@media only screen and (max-width : 1320px) {
+    .navbar {
+        padding: 0 50px;
+    }
+
+    .h2 {
+        font-size: 27px;
+        margin: 0%;
+    }
+
+    .h1 {
+        font-size: 35px;
+        letter-spacing: 1px;
+        margin-bottom: 5px;
+        line-height: 33px;
+        font-weight: 700;
+    }
+
+    .h3 {
+        font-size: 22px;
+    }
+
+    .p {
+        font-size: 18px;
+        letter-spacing: -1px;
+        margin-top: 10px;
+    }
+
+    .Home-button {
         display: flex;
     }
-    .Home-button > button{
+
+    .Home-button>button {
         margin: 10px 10px 10px 0px;
         /* border: 1px solid blue; */
         padding: 5px 10px;
         border-radius: 25px;
         font-size: 15px;
     }
+
     .inner-home2 {
-        height : 300px;
-        width : 300px;
+        height: 300px;
+        width: 300px;
         /* border: 2px solid white; */
+    }
+
+    .inner-about {
+        width: 90%;
+        /* border: 0.1px solid rgb(1, 1, 52); */
+    }
+
+    .inner-about1 {
+        height: 300px;
+        width: 300px;
+    }
+
+    .about-h1 {
+        font-size: 32px;
+        letter-spacing: 1px;
+        margin-bottom: 5px;
+        line-height: 33px;
+        font-weight: 700;
+    }
+
+    .about-h3 {
+        font-size: 20px;
+    }
+
+    .about-p {
+        font-size: 16px;
+        letter-spacing: -1px;
+        margin-top: 10px;
+    }
+
+    .skills-h1 {
+        font-size: 30px;
+    }
+
+    .inner-skills {
+        width: 85%;
+    }
+
+    .skills-main {
+        height: 35%;
+        width: 14%;
+        /* border: 1px solid white; */
+        margin: 1% 5.7%;
+    }
+
+    .skill-images>h6 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    #project {
+        height: 100vh;
+        width: 100%;
+        border: 0.1px solid rgb(1, 1, 52);
+        /* margin-top: 70px; */
+        text-align: center;
+        /* display: flex;
+        justify-content: space-around; */
+    }
+
+    .project-h1 {
+        font-size: 32px;
+        margin-top: 70px;
+        letter-spacing: 1px;
+        line-height: 40px;
+        margin-bottom: 30px;
+        font-weight: 700;
+        text-decoration-line: underline;
+        /* border: 1px solid white; */
+    }
+
+    .inner-project {
+        /* border: 2px solid red; */
+        height: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        width: 92%;
+        margin: auto;
+    }
+
+    .project-main {
+        width: 28%;
+        height: 40%;
+        margin: 0 10%;
+        border-radius: 10px;
+    }
+    .inner-contact {
+        /* border: 1px solid white; */
+        height: 75%;
+        width: 95%;
+    }
+    .contact1 {
+        /* border: 1px solid white; */
+        width: 42%;
+        /* height: 400px; */
+        text-align: left;
+    }
+    
+    .contact1-h4 {
+        font-size: 23px;
+        font-weight: 600;
+    }
+    
+    .contact-p {
+        font-size:13px;
+        margin: 10px 0px;
+        letter-spacing: 1px;
+    }
+    
+    .contact-p2 {
+        font-size: 13px;
+        margin: 10px 0px;
+        letter-spacing: 0px;
+    }
+    
+    .imp-text {
+        color: rgb(4, 220, 249)
+    }
+    
+    .phone-no {
+        font-size: 12px;
+        line-height: 28px;
+    }
+    
+    .email {
+        font-size: 12px;
+        line-height: 28px;
+        /* margin-bottom: -15px; */
+        /* border: 1px solid white;   */
+    }
+    
+    .address {
+        font-size: 12px;
+        line-height: 28px;
+        
+    }
+    
+    .contact2 {
+        /* border: 1px solid white; */
+        width: 40%;
+        /* height: 400px; */
+        text-align: left;
+        color: black;
+    }
+    
+    .name {
+        width: 100%;
+        height: 35px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        font-size: 18px;
+    }
+    
+    .email-input {
+        width: 100%;
+        height: 35px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        font-size: 18px;
+    }
+    
+    .subject {
+        width: 100%;
+        height: 60px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        font-size: 20px;
+    }
+    
+    .message {
+        width: 100%;
+        height: 90px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        font-size: 22px;
+    }
+    
+    .submit {
+        width: 100%;
+        height: 35px;
+        border-radius: 10px;
+        margin-bottom: 5px;
+        font-size: 23px;
+        font-weight: 600;
     }
 }
 
-@media only screen and (max-width : 1100px){
-    .navbar{
+@media only screen and (max-width : 1100px) {
+    .navbar {
         padding: 0 30px;
     }
-    .inner-home{
+
+    .inner-home {
         /* border: 1px solid white; */
         height: 100%;
         display: flex;
@@ -218,48 +909,241 @@
         width: 90%;
         margin: auto;
     }
-    .h2{
+
+    .h2 {
         font-size: 25px;
         margin: 0%;
     }
-    .h1{
+
+    .h1 {
         font-size: 32px;
         letter-spacing: 1px;
-        margin-bottom: 5px;    
+        margin-bottom: 5px;
         line-height: 30px;
         font-weight: 700;
     }
-    .h3{
+
+    .h3 {
         font-size: 20px;
-        text-decoration-line: underline;
     }
-    .p{
+
+    .p {
         font-size: 17px;
         letter-spacing: -1px;
         margin-top: 10px;
     }
-    .Home-button{
+
+    .Home-button {
         display: flex;
     }
-    .Home-button > button{
+
+    .Home-button>button {
         margin: 10px 10px 10px 0px;
         /* border: 1px solid blue; */
         padding: 5px 10px;
         border-radius: 25px;
         font-size: 14px;
     }
+
     .inner-home2 {
-        height : 270px;
-        width : 270px;
+        height: 270px;
+        width: 270px;
         /* border: 2px solid white; */
+    }
+
+    .inner-about {
+        width: 95%;
+    }
+
+    .inner-about1 {
+        height: 270px;
+        width: 270px;
+    }
+
+    .about-h1 {
+        font-size: 30px;
+        letter-spacing: 1px;
+        margin-bottom: 5px;
+        line-height: 30px;
+        font-weight: 700;
+    }
+
+    .about-h3 {
+        font-size: 18px
+    }
+
+    .about-p {
+        font-size: 14px;
+        letter-spacing: -1px;
+        margin-top: 10px;
+    }
+
+    .skills-h1 {
+        font-size: 25px;
+    }
+
+    .inner-skills {
+        width: 90%;
+    }
+
+    .skills-main {
+        height: 32%;
+        width: 16%;
+        /* border: 1px solid white; */
+        margin: 1% 5.1%;
+    }
+
+    .skill-images>h6 {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    #project {
+        height: 100vh;
+        width: 100%;
+        /* border: 4px solid white; */
+        /* margin-top: 70px; */
+        text-align: center;
+        /* display: flex;
+        justify-content: space-around; */
+    }
+
+    .project-h1 {
+        font-size: 28px;
+        margin-top: 70px;
+        letter-spacing: 1px;
+        line-height: 40px;
+        margin-bottom: 30px;
+        font-weight: 700;
+        text-decoration-line: underline;
+        /* border: 1px solid white; */
+    }
+
+    .inner-project {
+        /* border: 2px solid red; */
+        height: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        width: 92%;
+        margin: auto;
+    }
+
+    .project-main {
+        width: 39%;
+        height: 38%;
+        margin: 0 5%;
+        border-radius: 10px;
+    }
+    .inner-contact {
+        /* border: 1px solid white; */
+        height: 75%;
+        width: 95%;
+    }
+    .contact1 {
+        /* border: 1px solid white; */
+        width: 42%;
+        /* height: 400px; */
+        text-align: left;
+    }
+    
+    .contact1-h4 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    
+    .contact-p {
+        font-size:12px;
+        margin: 10px 0px;
+        letter-spacing: 1px;
+    }
+    
+    .contact-p2 {
+        font-size: 12px;
+        margin: 10px 0px;
+        letter-spacing: 0px;
+    }
+    
+    .imp-text {
+        color: rgb(4, 220, 249)
+    }
+    
+    .phone-no {
+        font-size: 11px;
+        line-height: 28px;
+    }
+    
+    .email {
+        font-size: 11px;
+        line-height: 28px;
+        /* margin-bottom: -15px; */
+        /* border: 1px solid white;   */
+    }
+    
+    .address {
+        font-size: 11px;
+        line-height: 28px;
+        
+    }
+    
+    .contact2 {
+        /* border: 1px solid white; */
+        width: 40%;
+        /* height: 400px; */
+        text-align: left;
+        color: black;
+    }
+    
+    .name {
+        width: 100%;
+        height: 32px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        font-size: 18px;
+    }
+    
+    .email-input {
+        width: 100%;
+        height: 32px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        font-size: 18px;
+    }
+    
+    .subject {
+        width: 100%;
+        height: 50px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        font-size: 20px;
+    }
+    
+    .message {
+        width: 100%;
+        height: 80px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        font-size: 22px;
+    }
+    
+    .submit {
+        width: 100%;
+        height: 30px;
+        border-radius: 10px;
+        margin-bottom: 5px;
+        font-size: 20px;
+        font-weight: 600;
     }
 }
 
-@media only screen and (max-width : 930px){
-    .burger{
+@media only screen and (max-width : 930px) {
+    .burger {
         display: block;
         cursor: pointer;
     }
+
     .right-navi {
         height: 0;
         position: absolute;
@@ -272,7 +1156,7 @@
         overflow: hidden;
     }
 
-    .inner-home{
+    .inner-home {
         /* border: 1px solid white; */
         height: 100%;
         display: flex;
@@ -281,14 +1165,16 @@
         width: 95%;
         margin: auto;
     }
-    .right-navi.active{
-        height: 450px;    
-    }
-    .right-navi.active ul{
-        opacity: 1; 
+
+    .right-navi.active {
+        height: 450px;
     }
 
-    .right-navi ul{
+    .right-navi.active ul {
+        opacity: 1;
+    }
+
+    .right-navi ul {
         display: block;
         width: fit-content;
         margin: 80px auto 0 auto;
@@ -296,71 +1182,277 @@
         transition: 0.5s;
         opacity: 0;
     }
-    .right-navi ul li a{
+
+    .right-navi ul li a {
         margin-bottom: 10px;
     }
 
-    .h2{
+    .h2 {
         font-size: 21px;
         margin: 0%;
     }
-    .h1{
+
+    .h1 {
         font-size: 28px;
         letter-spacing: 1px;
-        margin-bottom: 5px;    
+        margin-bottom: 5px;
         line-height: 27px;
         font-weight: 700;
     }
-    .h3{
+
+    .h3 {
         font-size: 17px;
         text-decoration-line: underline;
     }
-    .p{
+
+    .p {
         font-size: 14px;
         letter-spacing: -1px;
         margin-top: 10px;
     }
-    .Home-button{
+
+    .Home-button {
         display: flex;
     }
-    .Home-button > button{
+
+    .Home-button>button {
         margin: 10px 10px 10px 0px;
         /* border: 1px solid blue; */
         padding: 5px 10px;
         border-radius: 25px;
         font-size: 12px;
     }
-    .inner-home1{
-        max-width: 60%; 
+
+    .inner-home1 {
+        max-width: 60%;
         text-align: left;
         /* border: 2px solid white; */
-    } 
+    }
+
     .inner-home2 {
-        height : 230px;
-        width : 230px;
+        height: 230px;
+        width: 230px;
         /* border: 2px solid white; */
+    }
+
+    .about-h1 {
+        font-size: 27px;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+        line-height: 27px;
+        font-weight: 700;
+    }
+
+    .about-h3 {
+        font-size: 15px;
+    }
+
+    .about-p {
+        font-size: 12px;
+        letter-spacing: -1px;
+        margin-top: 10px;
+    }
+
+    .inner-about1 {
+        height: 230px;
+        width: 230px;
+        /* border: 2px solid white; */
+    }
+
+    .inner-skills {
+        justify-content: space-evenly;
+    }
+
+    .skills-h1 {
+        font-size: 24px;
+    }
+
+    .inner-skills {
+        width: 95%;
+    }
+
+    .skills-main {
+        height: 27%;
+        width: 20%;
+        /* border: 1px solid white; */
+        margin: 1% 10%;
+    }
+
+    .skill-images>h6 {
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    #project {
+        height: 100vh;
+        width: 100%;
+        /* border: 4px solid white; */
+        /* margin-top: 70px; */
+        text-align: center;
+        /* display: flex;
+        justify-content: space-around; */
+    }
+
+    .project-h1 {
+        font-size: 26px;
+        margin-top: 70px;
+        letter-spacing: 1px;
+        line-height: 40px;
+        margin-bottom: 30px;
+        font-weight: 700;
+        text-decoration-line: underline;
+        /* border: 1px solid white; */
+    }
+
+    .inner-project {
+        /* border: 2px solid red; */
+        height: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        width: 95%;
+        margin: auto;
+    }
+
+    .project-main {
+        width: 40%;
+        height: 33%;
+        margin: 0 5%;
+        /* border: 2px solid red; */
+        border-radius: 10px;
+    }
+    .inner-contact {
+        /* border: 1px solid white; */
+        height: 75%;
+        width: 95%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+    }
+    .contact1 {
+        /* border: 1px solid white; */
+        width: 80%;
+        /* height: 400px; */
+        text-align: center;
+    }
+    
+    .contact1-h4 {
+        font-size: 19px;
+        font-weight: 600;
+    }
+    
+    .contact-p {
+        font-size: 12px;
+        margin: 10px 0px;
+        letter-spacing: 1px;
+    }
+    
+    .contact-p2 {
+        font-size: 12px;
+        margin: 10px 0px;
+        letter-spacing: 0px;
+    }
+    
+    .imp-text {
+        color: rgb(4, 220, 249)
+    }
+    
+    .phone-no {
+        font-size: 11px;
+        line-height: 28px;
+    }
+    
+    .email {
+        font-size: 11px;
+        line-height: 28px;
+        /* margin-bottom: -15px; */
+        /* border: 1px solid white;   */
+    }
+    
+    .address {
+        font-size: 11px;
+        line-height: 28px;
+        
+    }
+    
+    .contact2 {
+        /* border: 1px solid white; */
+        width: 50%;
+        /* height: 400px; */
+        text-align: left;
+        color: black;
+    }
+    
+    .name {
+        width: 100%;
+        height: 28px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        font-size: 16px;
+    }
+    
+    .email-input {
+        width: 100%;
+        height: 28px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        font-size: 16px;
+    }
+    
+    .subject {
+        width: 100%;
+        height: 40px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        font-size: 16px;
+    }
+    
+    .message {
+        width: 100%;
+        height: 70px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        font-size: 18px;
+    }
+    
+    .submit {
+        width: 100%;
+        height: 25px;
+        border-radius: 10px;
+        margin-bottom: 5px;
+        font-size: 18px;
+        font-weight: 600;
     }
 }
 
-@media screen and (max-width : 650px){
-    .inner-home{
+@media screen and (max-width : 650px) {
+    #home {
+        height: 90vh;
+        /* border: 1px solid blue; */
+    }
+
+    .inner-home {
         /* border: 1px solid white; */
         height: 100%;
         display: flex;
-        flex-direction: column-reverse; 
-        justify-content: space-around; 
+        flex-direction: column-reverse;
+        justify-content: space-around;
         align-items: center;
         width: 95%;
         margin: auto;
     }
-    .right-navi.active{
-        height: 450px;    
-    }
-    .right-navi.active ul{
-        opacity: 1; 
+
+    .right-navi.active {
+        height: 450px;
     }
 
-    .right-navi ul{
+    .right-navi.active ul {
+        opacity: 1;
+    }
+
+    .right-navi ul {
         display: block;
         width: fit-content;
         margin: 80px auto 0 auto;
@@ -368,49 +1460,271 @@
         transition: 0.5s;
         opacity: 0;
     }
-    .right-navi ul li a{
+
+    .right-navi ul li a {
         margin-bottom: 10px;
     }
 
-    .h2{
+    .h2 {
         font-size: 22px;
         margin: 0%;
+        /* line-height: 30px; */
     }
-    .h1{
+
+    .h1 {
         font-size: 27px;
         letter-spacing: 1px;
-        margin-bottom: 5px;    
-        line-height: 25px;
+        margin-bottom: 5px;
+        /* line-height: 35px; */
         font-weight: 700;
     }
-    .h3{
+
+    .h3 {
         font-size: 17px;
         text-decoration-line: underline;
+        line-height: 35px;
     }
-    .p{
+
+    .p {
         font-size: 16px;
-        letter-spacing: -1px;
+        letter-spacing: 0px;
         margin-top: 15px;
+        margin-bottom: 10px;
     }
-    .Home-button{
+
+    .Home-button {
         display: flex;
+        /* border: 1px solid white; */
+        justify-content: center;
     }
-    .Home-button > button{
+
+    .Home-button>button {
         margin: 10px 10px 10px 0px;
         border: 1px solid blue;
         padding: 5px 10px;
         border-radius: 25px;
         font-size: 12px;
     }
-    .inner-home1{
-        max-width: 80%; 
-        text-align: left;
+
+    .inner-home1 {
+        max-width: 90%;
+        text-align: center;
         /* border: 2px solid white; */
-    } 
+    }
+
     .inner-home2 {
-        height : 250px;
-        width : 250px;
+        height: 250px;
+        width: 250px;
         /* border: 2px solid white; */
+    }
+
+    #about {
+        height: 100vh;
+    }
+
+    .inner-about {
+        /* border: 1px solid white; */
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 95%;
+        margin: auto;
+    }
+
+    .inner-about2 {
+        align-items: center;
+        /* border: 1px solid white; */
+        max-width: 90%;
+        text-align: center;
+    }
+
+    .about-h1 {
+        font-size: 27px;
+        letter-spacing: 1px;
+        margin-bottom: 5px;
+        line-height: 27px;
+        font-weight: 700;
+    }
+
+    .about-h3 {
+        font-size: 17px;
+        line-height: 35px;
+    }
+
+    .about-p {
+        font-size: 12px;
+        /* letter-spacing: 0px; */
+        margin-top: 5px;
+        text-align: left;
+    }
+
+    .inner-skills {
+        justify-content: space-evenly;
+    }
+
+    .skills-h1 {
+        font-size: 22px;
+    }
+
+    .inner-skills {
+        width: 90%;
+    }
+
+    .skills-main {
+        height: 27%;
+        width: 30%;
+        /* border: 1px solid white; */
+        margin: 1% 10%;
+    }
+
+    .skill-images>h6 {
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    #project {
+        height: 100vh;
+        width: 100%;
+        /* border: 4px solid white; */
+        /* margin-top: 70px; */
+        text-align: center;
+        /* display: flex;
+        justify-content: space-around; */
+    }
+
+    .project-h1 {
+        font-size: 23px;
+        margin-top: 70px;
+        letter-spacing: 1px;
+        line-height: 40px;
+        margin-bottom: 30px;
+        font-weight: 700;
+        text-decoration-line: underline;
+        /* border: 1px solid white; */
+    }
+
+    .inner-project {
+        /* border: 2px solid red; */
+        height: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        width: 95%;
+        margin: auto;
+    }
+
+    .project-main {
+        width: 60%;
+        height: 25%;
+        margin: 0 15%;
+        /* border: 2px solid red; */
+        border-radius: 10px;
+    }
+    .inner-contact {
+        /* border: 1px solid white; */
+        height: 75%;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+    }
+    .contact1 {
+        /* border: 1px solid white; */
+        width: 85%;
+        /* height: 400px; */
+        text-align: center;
+    }
+    
+    .contact1-h4 {
+        font-size: 16px;
+        font-weight: 600;
+    }
+    
+    .contact-p {
+        font-size: 11px;
+        margin: 10px 0px;
+        letter-spacing: 1px;
+    }
+    
+    .contact-p2 {
+        font-size: 11px;
+        margin: 10px 0px;
+        letter-spacing: 0px;
+    }
+    
+    .imp-text {
+        color: rgb(4, 220, 249)
+    }
+    
+    .phone-no {
+        font-size: 10px;
+        line-height: 28px;
+    }
+    
+    .email {
+        font-size: 10px;
+        line-height: 28px;
+        /* margin-bottom: -15px; */
+        /* border: 1px solid white;   */
+    }
+    
+    .address {
+        font-size: 10px;
+        line-height: 28px;
+        
+    }
+    
+    .contact2 {
+        /* border: 1px solid white; */
+        width: 70%;
+        /* height: 400px; */
+        text-align: left;
+        color: black;
+    }
+    
+    .name {
+        width: 100%;
+        height: 25px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        font-size: 12px;
+    }
+    
+    .email-input {
+        width: 100%;
+        height: 25px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        font-size: 12px;
+    }
+    
+    .subject {
+        width: 100%;
+        height: 30px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        font-size: 12px;
+    }
+    
+    .message {
+        width: 100%;
+        height: 50px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        font-size: 13px;
+    }
+    
+    .submit {
+        width: 100%;
+        height: 25px;
+        border-radius: 10px;
+        margin-bottom: 5px;
+        font-size: 13px;
+        font-weight: 600;
     }
 }
 
@@ -419,12 +1733,7 @@
 
 
 /* tablet */
-@media screen and (min-width : 650px) and (max-width : 960px) {
-    
-
-}
+@media screen and (min-width : 650px) and (max-width : 960px) {}
 
 /* mobile */
-@media screen and (max-width : 650px) {
-
-}
+@media screen and (max-width : 650px) {}
